@@ -764,6 +764,7 @@ public class HoodieTableMetaClient implements Serializable {
       return setMetaserverConfig(properties);
     }
 
+    // table meta start...
     public HoodieTableMetaClient build() {
       ValidationUtils.checkArgument(conf != null, "Configuration needs to be set to init HoodieTableMetaClient");
       ValidationUtils.checkArgument(basePath != null, "basePath needs to be set to init HoodieTableMetaClient");

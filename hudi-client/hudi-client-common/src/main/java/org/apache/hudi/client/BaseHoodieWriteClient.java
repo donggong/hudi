@@ -796,6 +796,7 @@ public abstract class BaseHoodieWriteClient<T, I, K, O> extends BaseHoodieClient
 
   /**
    * Provides a new commit time for a write operation (insert/update/delete).
+   * dongpeng start
    */
   public String startCommit() {
     HoodieTableMetaClient metaClient = createMetaClient(true);
@@ -804,6 +805,7 @@ public abstract class BaseHoodieWriteClient<T, I, K, O> extends BaseHoodieClient
 
   /**
    * Provides a new commit time for a write operation (insert/update/delete/insert_overwrite/insert_overwrite_table) with specified action.
+   * dongpeng rollback
    */
   public String startCommit(String actionType, HoodieTableMetaClient metaClient) {
     CleanerUtils.rollbackFailedWrites(config.getFailedWritesCleanPolicy(),

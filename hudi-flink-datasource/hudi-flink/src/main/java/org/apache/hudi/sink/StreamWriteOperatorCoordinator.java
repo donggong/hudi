@@ -176,6 +176,7 @@ public class StreamWriteOperatorCoordinator
     this.hiveConf = new SerializableConfiguration(HadoopConfigurations.getHiveConf(conf));
   }
 
+  // dongpeng start
   @Override
   public void start() throws Exception {
     // setup classloader for APIs that use reflection without taking ClassLoader param
