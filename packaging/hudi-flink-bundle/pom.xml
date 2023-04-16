@@ -297,6 +297,10 @@
           <artifactId>guava</artifactId>
           <groupId>com.google.guava</groupId>
         </exclusion>
+<!--        <exclusion>-->
+<!--          <artifactId>avro</artifactId>-->
+<!--          <groupId>org.apache.avro</groupId>-->
+<!--        </exclusion>-->
       </exclusions>
     </dependency>
     <dependency>
@@ -397,6 +401,10 @@
         <exclusion>
           <groupId>it.unimi.dsi</groupId>
           <artifactId>fastutil</artifactId>
+        </exclusion>
+        <exclusion>
+          <artifactId>avro</artifactId>
+          <groupId>org.apache.avro</groupId>
         </exclusion>
       </exclusions>
     </dependency>
